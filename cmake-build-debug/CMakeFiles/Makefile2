@@ -64,39 +64,187 @@ CMAKE_SOURCE_DIR = E:\Codes\C_improve
 CMAKE_BINARY_DIR = E:\Codes\C_improve\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/C_improve.dir
+# Target rules for target CMakeFiles/find_stracks.dir
 
 # All Build rule for target.
-CMakeFiles/C_improve.dir/all:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/depend
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target C_improve"
-.PHONY : CMakeFiles/C_improve.dir/all
+CMakeFiles/find_stracks.dir/all:
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/depend
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target find_stracks"
+.PHONY : CMakeFiles/find_stracks.dir/all
 
 # Include target in all.
-all: CMakeFiles/C_improve.dir/all
+all: CMakeFiles/find_stracks.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/C_improve.dir/rule: cmake_check_build_system
+CMakeFiles/find_stracks.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/C_improve.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/find_stracks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/C_improve.dir/rule
+.PHONY : CMakeFiles/find_stracks.dir/rule
 
 # Convenience name for target.
-C_improve: CMakeFiles/C_improve.dir/rule
+find_stracks: CMakeFiles/find_stracks.dir/rule
 
-.PHONY : C_improve
-
-# clean rule for target.
-CMakeFiles/C_improve.dir/clean:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/clean
-.PHONY : CMakeFiles/C_improve.dir/clean
+.PHONY : find_stracks
 
 # clean rule for target.
-clean: CMakeFiles/C_improve.dir/clean
+CMakeFiles/find_stracks.dir/clean:
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/clean
+.PHONY : CMakeFiles/find_stracks.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/find_stracks.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/reverse_strings.dir
+
+# All Build rule for target.
+CMakeFiles/reverse_strings.dir/all:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/depend
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target reverse_strings"
+.PHONY : CMakeFiles/reverse_strings.dir/all
+
+# Include target in all.
+all: CMakeFiles/reverse_strings.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/reverse_strings.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/reverse_strings.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/reverse_strings.dir/rule
+
+# Convenience name for target.
+reverse_strings: CMakeFiles/reverse_strings.dir/rule
+
+.PHONY : reverse_strings
+
+# clean rule for target.
+CMakeFiles/reverse_strings.dir/clean:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/clean
+.PHONY : CMakeFiles/reverse_strings.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/reverse_strings.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fill_chars.dir
+
+# All Build rule for target.
+CMakeFiles/fill_chars.dir/all:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/depend
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target fill_chars"
+.PHONY : CMakeFiles/fill_chars.dir/all
+
+# Include target in all.
+all: CMakeFiles/fill_chars.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fill_chars.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/fill_chars.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/fill_chars.dir/rule
+
+# Convenience name for target.
+fill_chars: CMakeFiles/fill_chars.dir/rule
+
+.PHONY : fill_chars
+
+# clean rule for target.
+CMakeFiles/fill_chars.dir/clean:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/clean
+.PHONY : CMakeFiles/fill_chars.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/fill_chars.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GPS.dir
+
+# All Build rule for target.
+CMakeFiles/GPS.dir/all:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/depend
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target GPS"
+.PHONY : CMakeFiles/GPS.dir/all
+
+# Include target in all.
+all: CMakeFiles/GPS.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GPS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/GPS.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/GPS.dir/rule
+
+# Convenience name for target.
+GPS: CMakeFiles/GPS.dir/rule
+
+.PHONY : GPS
+
+# clean rule for target.
+CMakeFiles/GPS.dir/clean:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/clean
+.PHONY : CMakeFiles/GPS.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/GPS.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/secret_message.dir
+
+# All Build rule for target.
+CMakeFiles/secret_message.dir/all:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/depend
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Codes\C_improve\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target secret_message"
+.PHONY : CMakeFiles/secret_message.dir/all
+
+# Include target in all.
+all: CMakeFiles/secret_message.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/secret_message.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/secret_message.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/secret_message.dir/rule
+
+# Convenience name for target.
+secret_message: CMakeFiles/secret_message.dir/rule
+
+.PHONY : secret_message
+
+# clean rule for target.
+CMakeFiles/secret_message.dir/clean:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/clean
+.PHONY : CMakeFiles/secret_message.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/secret_message.dir/clean
 
 .PHONY : clean
 

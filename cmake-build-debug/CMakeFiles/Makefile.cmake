@@ -48,5 +48,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/C_improve.dir/DependInfo.cmake"
+  "CMakeFiles/find_stracks.dir/DependInfo.cmake"
+  "CMakeFiles/reverse_strings.dir/DependInfo.cmake"
+  "CMakeFiles/fill_chars.dir/DependInfo.cmake"
+  "CMakeFiles/GPS.dir/DependInfo.cmake"
+  "CMakeFiles/secret_message.dir/DependInfo.cmake"
   )

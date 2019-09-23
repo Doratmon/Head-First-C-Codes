@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\Codes\C_improve\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	D:\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	D:\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,17 +110,96 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C_improve
+# Target rules for targets named find_stracks
 
 # Build rule for target.
-C_improve: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 C_improve
-.PHONY : C_improve
+find_stracks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 find_stracks
+.PHONY : find_stracks
 
 # fast build rule for target.
-C_improve/fast:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/build
-.PHONY : C_improve/fast
+find_stracks/fast:
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/build
+.PHONY : find_stracks/fast
+
+#=============================================================================
+# Target rules for targets named reverse_strings
+
+# Build rule for target.
+reverse_strings: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 reverse_strings
+.PHONY : reverse_strings
+
+# fast build rule for target.
+reverse_strings/fast:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/build
+.PHONY : reverse_strings/fast
+
+#=============================================================================
+# Target rules for targets named fill_chars
+
+# Build rule for target.
+fill_chars: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 fill_chars
+.PHONY : fill_chars
+
+# fast build rule for target.
+fill_chars/fast:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/build
+.PHONY : fill_chars/fast
+
+#=============================================================================
+# Target rules for targets named GPS
+
+# Build rule for target.
+GPS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 GPS
+.PHONY : GPS
+
+# fast build rule for target.
+GPS/fast:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/build
+.PHONY : GPS/fast
+
+#=============================================================================
+# Target rules for targets named secret_message
+
+# Build rule for target.
+secret_message: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 secret_message
+.PHONY : secret_message
+
+# fast build rule for target.
+secret_message/fast:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/build
+.PHONY : secret_message/fast
+
+String_/fill_chars.obj: String_/fill_chars.c.obj
+
+.PHONY : String_/fill_chars.obj
+
+# target to build an object file
+String_/fill_chars.c.obj:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/String_/fill_chars.c.obj
+.PHONY : String_/fill_chars.c.obj
+
+String_/fill_chars.i: String_/fill_chars.c.i
+
+.PHONY : String_/fill_chars.i
+
+# target to preprocess a source file
+String_/fill_chars.c.i:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/String_/fill_chars.c.i
+.PHONY : String_/fill_chars.c.i
+
+String_/fill_chars.s: String_/fill_chars.c.s
+
+.PHONY : String_/fill_chars.s
+
+# target to generate assembly for a file
+String_/fill_chars.c.s:
+	$(MAKE) -f CMakeFiles\fill_chars.dir\build.make CMakeFiles/fill_chars.dir/String_/fill_chars.c.s
+.PHONY : String_/fill_chars.c.s
 
 String_/find_tracks.obj: String_/find_tracks.c.obj
 
@@ -128,7 +207,7 @@ String_/find_tracks.obj: String_/find_tracks.c.obj
 
 # target to build an object file
 String_/find_tracks.c.obj:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.obj
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/String_/find_tracks.c.obj
 .PHONY : String_/find_tracks.c.obj
 
 String_/find_tracks.i: String_/find_tracks.c.i
@@ -137,7 +216,7 @@ String_/find_tracks.i: String_/find_tracks.c.i
 
 # target to preprocess a source file
 String_/find_tracks.c.i:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.i
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/String_/find_tracks.c.i
 .PHONY : String_/find_tracks.c.i
 
 String_/find_tracks.s: String_/find_tracks.c.s
@@ -146,8 +225,89 @@ String_/find_tracks.s: String_/find_tracks.c.s
 
 # target to generate assembly for a file
 String_/find_tracks.c.s:
-	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.s
+	$(MAKE) -f CMakeFiles\find_stracks.dir\build.make CMakeFiles/find_stracks.dir/String_/find_tracks.c.s
 .PHONY : String_/find_tracks.c.s
+
+String_/reverse_strings.obj: String_/reverse_strings.c.obj
+
+.PHONY : String_/reverse_strings.obj
+
+# target to build an object file
+String_/reverse_strings.c.obj:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/String_/reverse_strings.c.obj
+.PHONY : String_/reverse_strings.c.obj
+
+String_/reverse_strings.i: String_/reverse_strings.c.i
+
+.PHONY : String_/reverse_strings.i
+
+# target to preprocess a source file
+String_/reverse_strings.c.i:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/String_/reverse_strings.c.i
+.PHONY : String_/reverse_strings.c.i
+
+String_/reverse_strings.s: String_/reverse_strings.c.s
+
+.PHONY : String_/reverse_strings.s
+
+# target to generate assembly for a file
+String_/reverse_strings.c.s:
+	$(MAKE) -f CMakeFiles\reverse_strings.dir\build.make CMakeFiles/reverse_strings.dir/String_/reverse_strings.c.s
+.PHONY : String_/reverse_strings.c.s
+
+create_tools/GPS/geo2json.obj: create_tools/GPS/geo2json.c.obj
+
+.PHONY : create_tools/GPS/geo2json.obj
+
+# target to build an object file
+create_tools/GPS/geo2json.c.obj:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/create_tools/GPS/geo2json.c.obj
+.PHONY : create_tools/GPS/geo2json.c.obj
+
+create_tools/GPS/geo2json.i: create_tools/GPS/geo2json.c.i
+
+.PHONY : create_tools/GPS/geo2json.i
+
+# target to preprocess a source file
+create_tools/GPS/geo2json.c.i:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/create_tools/GPS/geo2json.c.i
+.PHONY : create_tools/GPS/geo2json.c.i
+
+create_tools/GPS/geo2json.s: create_tools/GPS/geo2json.c.s
+
+.PHONY : create_tools/GPS/geo2json.s
+
+# target to generate assembly for a file
+create_tools/GPS/geo2json.c.s:
+	$(MAKE) -f CMakeFiles\GPS.dir\build.make CMakeFiles/GPS.dir/create_tools/GPS/geo2json.c.s
+.PHONY : create_tools/GPS/geo2json.c.s
+
+create_tools/secret_message_/secret_message.obj: create_tools/secret_message_/secret_message.c.obj
+
+.PHONY : create_tools/secret_message_/secret_message.obj
+
+# target to build an object file
+create_tools/secret_message_/secret_message.c.obj:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/create_tools/secret_message_/secret_message.c.obj
+.PHONY : create_tools/secret_message_/secret_message.c.obj
+
+create_tools/secret_message_/secret_message.i: create_tools/secret_message_/secret_message.c.i
+
+.PHONY : create_tools/secret_message_/secret_message.i
+
+# target to preprocess a source file
+create_tools/secret_message_/secret_message.c.i:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/create_tools/secret_message_/secret_message.c.i
+.PHONY : create_tools/secret_message_/secret_message.c.i
+
+create_tools/secret_message_/secret_message.s: create_tools/secret_message_/secret_message.c.s
+
+.PHONY : create_tools/secret_message_/secret_message.s
+
+# target to generate assembly for a file
+create_tools/secret_message_/secret_message.c.s:
+	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/create_tools/secret_message_/secret_message.c.s
+.PHONY : create_tools/secret_message_/secret_message.c.s
 
 # Help Target
 help:
@@ -155,12 +315,28 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... C_improve
 	@echo ... edit_cache
+	@echo ... find_stracks
+	@echo ... reverse_strings
+	@echo ... fill_chars
+	@echo ... GPS
+	@echo ... secret_message
+	@echo ... rebuild_cache
+	@echo ... String_/fill_chars.obj
+	@echo ... String_/fill_chars.i
+	@echo ... String_/fill_chars.s
 	@echo ... String_/find_tracks.obj
 	@echo ... String_/find_tracks.i
 	@echo ... String_/find_tracks.s
+	@echo ... String_/reverse_strings.obj
+	@echo ... String_/reverse_strings.i
+	@echo ... String_/reverse_strings.s
+	@echo ... create_tools/GPS/geo2json.obj
+	@echo ... create_tools/GPS/geo2json.i
+	@echo ... create_tools/GPS/geo2json.s
+	@echo ... create_tools/secret_message_/secret_message.obj
+	@echo ... create_tools/secret_message_/secret_message.i
+	@echo ... create_tools/secret_message_/secret_message.s
 .PHONY : help
 
 

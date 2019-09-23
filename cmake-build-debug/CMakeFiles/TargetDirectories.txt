@@ -1,3 +1,7 @@
-E:/Codes/C_improve/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/Codes/C_improve/cmake-build-debug/CMakeFiles/C_improve.dir
 E:/Codes/C_improve/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/find_stracks.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/reverse_strings.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/fill_chars.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/GPS.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/secret_message.dir
+E:/Codes/C_improve/cmake-build-debug/CMakeFiles/rebuild_cache.dir
