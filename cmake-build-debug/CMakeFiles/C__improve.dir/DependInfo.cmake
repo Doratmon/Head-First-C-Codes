@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/Codes/C__improve/String_/find_tracks.c" "E:/Codes/C__improve/cmake-build-debug/CMakeFiles/C__improve.dir/String_/find_tracks.c.obj"
+  "E:/Codes/C_improve/String_/find_tracks.c" "E:/Codes/C_improve/cmake-build-debug/CMakeFiles/C__improve.dir/String_/find_tracks.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

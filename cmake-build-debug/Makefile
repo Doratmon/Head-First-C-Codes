@@ -47,24 +47,13 @@ RM = D:\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\Codes\C__improve
+CMAKE_SOURCE_DIR = E:\Codes\C_improve
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\Codes\C__improve\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Codes\C_improve\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	D:\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -77,11 +66,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	D:\JetBrains\Toolbox\apps\CLion\ch-0\191.7479.33\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C__improve\cmake-build-debug\CMakeFiles E:\Codes\C__improve\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles E:\Codes\C_improve\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C__improve\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Codes\C_improve\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C__improve
+# Target rules for targets named C_improve
 
 # Build rule for target.
-C__improve: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 C__improve
-.PHONY : C__improve
+C_improve: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 C_improve
+.PHONY : C_improve
 
 # fast build rule for target.
-C__improve/fast:
-	$(MAKE) -f CMakeFiles\C__improve.dir\build.make CMakeFiles/C__improve.dir/build
-.PHONY : C__improve/fast
+C_improve/fast:
+	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/build
+.PHONY : C_improve/fast
 
 String_/find_tracks.obj: String_/find_tracks.c.obj
 
@@ -128,7 +128,7 @@ String_/find_tracks.obj: String_/find_tracks.c.obj
 
 # target to build an object file
 String_/find_tracks.c.obj:
-	$(MAKE) -f CMakeFiles\C__improve.dir\build.make CMakeFiles/C__improve.dir/String_/find_tracks.c.obj
+	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.obj
 .PHONY : String_/find_tracks.c.obj
 
 String_/find_tracks.i: String_/find_tracks.c.i
@@ -137,7 +137,7 @@ String_/find_tracks.i: String_/find_tracks.c.i
 
 # target to preprocess a source file
 String_/find_tracks.c.i:
-	$(MAKE) -f CMakeFiles\C__improve.dir\build.make CMakeFiles/C__improve.dir/String_/find_tracks.c.i
+	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.i
 .PHONY : String_/find_tracks.c.i
 
 String_/find_tracks.s: String_/find_tracks.c.s
@@ -146,7 +146,7 @@ String_/find_tracks.s: String_/find_tracks.c.s
 
 # target to generate assembly for a file
 String_/find_tracks.c.s:
-	$(MAKE) -f CMakeFiles\C__improve.dir\build.make CMakeFiles/C__improve.dir/String_/find_tracks.c.s
+	$(MAKE) -f CMakeFiles\C_improve.dir\build.make CMakeFiles/C_improve.dir/String_/find_tracks.c.s
 .PHONY : String_/find_tracks.c.s
 
 # Help Target
@@ -155,9 +155,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... edit_cache
-	@echo ... C__improve
 	@echo ... rebuild_cache
+	@echo ... C_improve
+	@echo ... edit_cache
 	@echo ... String_/find_tracks.obj
 	@echo ... String_/find_tracks.i
 	@echo ... String_/find_tracks.s
