@@ -123,6 +123,19 @@ find_stracks/fast:
 .PHONY : find_stracks/fast
 
 #=============================================================================
+# Target rules for targets named use_library
+
+# Build rule for target.
+use_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 use_library
+.PHONY : use_library
+
+# fast build rule for target.
+use_library/fast:
+	$(MAKE) -f CMakeFiles\use_library.dir\build.make CMakeFiles/use_library.dir/build
+.PHONY : use_library/fast
+
+#=============================================================================
 # Target rules for targets named reverse_strings
 
 # Build rule for target.
@@ -173,6 +186,19 @@ secret_message: cmake_check_build_system
 secret_message/fast:
 	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/build
 .PHONY : secret_message/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 String_/fill_chars.obj: String_/fill_chars.c.obj
 
@@ -309,6 +335,60 @@ create_tools/secret_message_/secret_message.c.s:
 	$(MAKE) -f CMakeFiles\secret_message.dir\build.make CMakeFiles/secret_message.dir/create_tools/secret_message_/secret_message.c.s
 .PHONY : create_tools/secret_message_/secret_message.c.s
 
+create_tools/use_library_/use_library.obj: create_tools/use_library_/use_library.c.obj
+
+.PHONY : create_tools/use_library_/use_library.obj
+
+# target to build an object file
+create_tools/use_library_/use_library.c.obj:
+	$(MAKE) -f CMakeFiles\use_library.dir\build.make CMakeFiles/use_library.dir/create_tools/use_library_/use_library.c.obj
+.PHONY : create_tools/use_library_/use_library.c.obj
+
+create_tools/use_library_/use_library.i: create_tools/use_library_/use_library.c.i
+
+.PHONY : create_tools/use_library_/use_library.i
+
+# target to preprocess a source file
+create_tools/use_library_/use_library.c.i:
+	$(MAKE) -f CMakeFiles\use_library.dir\build.make CMakeFiles/use_library.dir/create_tools/use_library_/use_library.c.i
+.PHONY : create_tools/use_library_/use_library.c.i
+
+create_tools/use_library_/use_library.s: create_tools/use_library_/use_library.c.s
+
+.PHONY : create_tools/use_library_/use_library.s
+
+# target to generate assembly for a file
+create_tools/use_library_/use_library.c.s:
+	$(MAKE) -f CMakeFiles\use_library.dir\build.make CMakeFiles/use_library.dir/create_tools/use_library_/use_library.c.s
+.PHONY : create_tools/use_library_/use_library.c.s
+
+test.obj: test.c.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -317,11 +397,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... find_stracks
+	@echo ... use_library
 	@echo ... reverse_strings
 	@echo ... fill_chars
 	@echo ... GPS
 	@echo ... secret_message
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... String_/fill_chars.obj
 	@echo ... String_/fill_chars.i
 	@echo ... String_/fill_chars.s
@@ -337,6 +419,12 @@ help:
 	@echo ... create_tools/secret_message_/secret_message.obj
 	@echo ... create_tools/secret_message_/secret_message.i
 	@echo ... create_tools/secret_message_/secret_message.s
+	@echo ... create_tools/use_library_/use_library.obj
+	@echo ... create_tools/use_library_/use_library.i
+	@echo ... create_tools/use_library_/use_library.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
