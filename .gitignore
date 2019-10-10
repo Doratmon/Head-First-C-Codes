@@ -1,0 +1,9 @@
+# ignore all executable files
+*.exe
+
+# ignore configure files
+.idea/
+cmake-build-debug/
+
+# ignore CMakeLists.txt
+CMakeLists.txt
