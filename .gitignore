@@ -1,4 +1,4 @@
-# ignore all executable files
+# ignore all executable files (Windows)
 *.exe
 
 # ignore configure files
@@ -7,3 +7,6 @@ cmake-build-debug/
 
 # ignore CMakeLists.txt
 CMakeLists.txt
+
+# ignore all *.out (Linux)
+*.out
