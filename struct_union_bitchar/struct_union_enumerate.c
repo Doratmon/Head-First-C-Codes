@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 
-typedef enum {
+typedef enum {//定义一个枚举 只用保存符号 底层有值
     COUNT, POUNDS, PINTS
 } unit_of_measure;
 
