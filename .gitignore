@@ -1,6 +1,9 @@
 # ignore all executable files (Windows)
 *.exe
 
+# ignore all object files (Windows)
+*.o
+
 # ignore configure files
 .idea/
 cmake-build-debug/
