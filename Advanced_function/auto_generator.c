@@ -53,7 +53,7 @@ int main() {
 //                marriage(r[i]);
 //                break;
 //    }
-        (replies[r[i].type])(r[i]);//r[i].type对应DUMP, SECOND_CHANCE, MARRIAGE，分别对应0，1，2
+        (replies[r[i].type])(r[i]);//r[i].type对应DUMP, SECOND_CHANCE, MARRIAGE，分别对应0，1，2ha
     }
     return 0;
 }
