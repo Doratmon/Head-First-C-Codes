@@ -4,9 +4,10 @@
 # ignore all object files (Windows)
 *.o
 
-# ignore configure files
+# ignore configure directories
 .idea/
 cmake-build-debug/
+.vscode/
 
 # ignore CMakeLists.txt
 CMakeLists.txt
