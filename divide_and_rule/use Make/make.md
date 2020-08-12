@@ -12,7 +12,8 @@ launch: truster.o launch.o
 1. 目标文件：truster.o launch.o launch
 2. 依赖项: 目标文件后面的文件
 3. 生成命令是[TAB]后的内容
+4. 使用方法：make launch （使用cywin时，在windows中会生成launch.exe而不是launch）
 
 **我的一些理解：**
-* Windows中多文件编程直接运行按钮就可以运行，是编译器做了make的事情，Linux中更直接的揭示了make是怎么做的
+* Windows中多文件编程直接点击运行按钮就可以运行，是编译器做了make的事情，Linux中make的工作需要单独用make实现，而不能用gcc做
 * gcc xx -o yy/-c：xx只写.c文件即可，但是在makefile文件的依赖项中要写全（包含.c和.h)
