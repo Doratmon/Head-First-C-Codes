@@ -14,3 +14,7 @@ CMakeLists.txt
 
 # ignore all *.out (Linux)
 *.out
+
+# ignore all *.a *.so
+*.a
+*.so
